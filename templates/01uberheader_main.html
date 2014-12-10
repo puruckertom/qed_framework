@@ -1,0 +1,62 @@
+{% load staticfiles %}{% load static %}{% get_static_prefix as STATIC_PREFIX %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--start 01uberheader_main-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title> &uuml;bertool </title>
+  
+<!-- Import Google Analytics -->
+  <script src='{% static "stylesheets/scripts_googleanal.js" %}' type="text/javascript"></script>
+<!-- Import jQuery library -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+<!-- Import jQueryUI library -->
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+<!-- import Javascripts -->
+  <script src='{% static "stylesheets/scripts.js" %}' type="text/javascript"></script>
+<!-- import Header Javascripts -->
+  <script src='{% static "stylesheets/scripts_header.js" %}' type="text/javascript"></script>
+<!-- import blockUI -->
+  <script src='{% static "stylesheets/jquery.blockUI.js" %}' type="text/javascript"></script>
+
+  <link class="ssMain" href='{{ STATIC_PREFIX }}stylesheets/style{{ site_skin }}.css' media="screen" rel="stylesheet" type="text/css"/>
+  <link class="ssSkin" href='{{ STATIC_PREFIX }}stylesheets/style_eco{{ site_skin }}.css' media="screen" rel="stylesheet" type="text/css"/>
+
+<!-- Browser FAVICON -->
+  <link href='http://www.ubertool.org/static/images/favicon/eco{{ site_skin }}/favicon.ico' rel="SHORTCUT ICON"/>
+
+</head>
+
+<body>
+
+<!-- import Header_main Javascripts -->
+  <script src='{% static "stylesheets/scripts_header_main.js" %}' type="text/javascript"></script>
+  <script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script> <!-- IE8 console compat -->
+
+<!-- Main Container Div -->
+<div id="container">
+
+<!-- Ubertool banner -->
+<div id="banner">
+  <a href="/eco" id="banner_l">&uuml;bertool: web applications for ecological risk assessment (beta version)</a>
+  <div id="banner_r">
+    <div id="home">
+      <div id="home_text"><a href="/">Home</a></div>
+      <img src='{% static "images/home.gif" %}'/>
+    </div>
+    <!-- <div id="about">
+      <div id="about_text"><a href="/about">About</a></div>
+      <img src='{% static "static/images/about.gif" %}'/>
+    </div> -->
+  </div>
+</div>
+
+<!-- Header -->
+<div id="topheader_pic_main"></div>
+<div id="topheader_p_main">
+<!--   <a href="#" id="epaSkin">EPA Skin</a>
+  <a href="#" id="defSkin">Default Skin</a> -->
+  <!-- <a href="/login" class="logreg">login</a><a href="/register" class="logreg">register</a> -->
+  <p>Cloud-based environmental models for evaluating pesticide risks to ecosystems.</p>
+</div>
+<!--end 01uberheader_main-->

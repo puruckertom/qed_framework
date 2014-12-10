@@ -1,0 +1,9 @@
+{% load staticfiles %}
+<!--start 04uberinput_start-->
+<script src='{% static "stylesheets/scripts_input.js" %}'></script>
+
+	<div class="articles_input">
+		<h2 class="model_header">{{ model_attributes }}</h2>
+		<form method="post" action="/eco/{{model}}/output">
+		<table class="input_table">
+<!--end 04uberinput_start-->
